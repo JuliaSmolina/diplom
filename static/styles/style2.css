@@ -1,0 +1,95 @@
+/* Стили для кнопки возврата на главную страницу */
+.\'nav_bar {
+    text-align: center;
+    font-size: 30px;
+}
+/* Стили для шапки */
+header {
+    background-color: #39adc2;
+    font-size: 15px;
+    padding: 20px;
+    text-align: center;
+}
+/* Стиль для заголовка в шапке */
+header h1 {
+    margin: 0;
+    color: #130202;
+}
+/* Стили для тела страницы */
+body{
+    background-color: rgba(247, 247, 253, 0.945);
+    background-size: cover;
+    background-attachment: fixed;
+    text-align: center;
+    margin: 0;
+}
+/* Стили для блоков с карточками на главной странице */
+#cards{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+/* Стили для карточки */
+.product_card{
+    border-radius: 10px;
+    box-shadow: 42px 41px 8px 0px rgba(34, 60, 80, 0.2);
+    background-color: rgba(7, 0, 0, 0.8);
+    height: 300px;
+    width: 300px;
+    border: 10px solid rgb(0 0 0 / 32%);
+    margin: 10px;
+    font-size: 15px;
+    color: rgb(223, 233, 236);
+}
+/* Стили для блока картинки */
+.card_img{
+    width: auto;
+    height: auto;
+}
+/* Стили для картинки в блоке */
+.card_img img{
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+/* Стили для текста в карточке */
+.card_text{
+    display: flex;
+    justify-content: space-around;
+}
+/* Стиль для всех картинок */
+.img {
+    width: 100%; 
+    height: auto; 
+}
+/* Стили для текста на странице */
+.h3.body{
+    text-align: center;
+    font-size: 30px;
+}
+/* Стили для текста тура */
+.tour_text {
+    text-align: center;
+    font-size: 25px;
+}
+/* Стили для блока с туром */
+.tour_blok{
+    text-align: center;
+    font-size: 50px;
+}
+/* Стили для футера страницы */
+footer {
+    margin: 0;
+    background-color: #333;
+    color: #fff;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+.footer-section.contact {
+    text-align: center;
+}
+.footer-bottom {
+    text-align: center;
+} 

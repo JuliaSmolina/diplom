@@ -1,0 +1,25 @@
+<!-- Разметка для страницы с бронированием -->
+{% extends 'skeleton.html'%}
+
+{% block title %} {{book.sea_name}} {% endblock %}
+
+{% block mainContent %}
+<div class="tour_block">
+     <h3>{{book.coordinates}}</h3>
+     <div class="book_img">
+          <img src={{book.img_2}} alt="">
+     </div>
+     <div class="tour_text">
+
+     <p>{{book.sea_name}}</p>
+     <p>{{book.description}}</p>
+     <p>Цена: {{book.price}} рублей</p>
+     </div>
+ </div>
+ <div class="'nav_bar">
+     {% for btn in menu %}
+         <a href="{{ btn.link }}">{{ btn.name }}</a>
+     {% endfor %}
+ </div>
+{% endblock %}
+

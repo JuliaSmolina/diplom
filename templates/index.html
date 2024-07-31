@@ -1,0 +1,43 @@
+<!-- Разметка для главной страницы -->
+{% extends 'skeleton.html' %}
+
+{% block title %} Главная {% endblock %}
+
+{% block mainContent %}
+    <header>
+        <h1>Sea travels</h1>
+    </header>
+    <section>
+        <h2>Добро пожаловать!</h2>
+        <p>Устали от назойливой жары? Хочется чего-то нового? Возможно, в 
+           детстве вы хотели увидеть фауну крайнего севера? Тогда вам к нам! 
+           Наша компания поможет организовать вашу поездку по самым холодным морям нашей страны
+        </p>
+    </section>
+
+    <div id="cards">
+        {% for item in cardList %}
+            <a href="/books/{{item.id}}">
+                <div class="product_card">
+                    <div class="card_img">
+                        <img src="{{item.img_1}}" alt="">
+                    </div>
+                    <div class="card_text">
+                        <h3>{{item.sea_name}}</h3>
+                    </div>
+                </div>
+            </a>
+        {% endfor %}
+    </div>
+
+    <footer>
+        <div class="footer-section contact">
+            <p>Адрес: Россия, Санкт-Петербург</p>
+            <p>Email: sealovers@yandex.com</p>
+            <p>Если вам понравился тур, свяжитесь с нами по телефону: +7 981 476-78-91</p>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 Sea travel. Все права защищены.
+        </div>
+    </footer>
+{% endblock %}
